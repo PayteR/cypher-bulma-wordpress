@@ -1,0 +1,16 @@
+
+$widget-margin-bottom: 1rem !default;
+
+.widget {
+  margin-bottom: $widget-margin-bottom;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.widget-title {
+  @extend .title;
+}
+
