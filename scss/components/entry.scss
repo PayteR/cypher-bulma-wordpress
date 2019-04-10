@@ -1,0 +1,27 @@
+
+$entry-breakpoint: $tablet !default;
+
+.entry.is-loop {
+  @include until($entry-breakpoint) {
+    flex-direction: column;
+    .media-left,
+    .media-right {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+.entry-summary,
+.entry-content {
+  @extend .content !optional;
+}
+
+.entry-meta-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+}

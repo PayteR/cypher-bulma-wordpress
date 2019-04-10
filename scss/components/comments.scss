@@ -1,30 +1,56 @@
+$wordpress-comments-avatar-size: 64px;
+
 .comment-list {
-  padding-left: 0;
   list-style: none;
 }
 
-.comment-list ol {
-  list-style: none;
+.comment-body {
+
+  .avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: $wordpress-comments-avatar-size;
+    height: $wordpress-comments-avatar-size;
+  }
+
+  .reply {
+    text-align: right;
+  }
 }
 
-.comment-form label {
-  @extend .label;
+.comment-meta {
+  position: relative;
 }
 
-.comment-form p {
-  @extend .field;
+.comment-metadata {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: $size-7;
 }
 
-.comment-form input[type="text"],
-.comment-form input[type="email"],
-.comment-form input[type="url"] {
-  @extend .input;
+.comment-meta,
+.comment-content {
+  padding-left: $wordpress-comments-avatar-size + 16px;
 }
 
-.comment-form textarea {
-  @extend .textarea;
+.comment {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border;
+  }
 }
 
-.comment-form input[type="submit"] {
-  @extend .button, .is-primary;
+.comment-reply-title {
+  @extend .title;
+}
+
+.form-submit {
+  margin-top: 1rem;
+  .submit {
+    @extend .button !optional;
+    @extend .button.is-primary !optional;
+  }
 }
