@@ -11,6 +11,6 @@ $widget-margin-bottom: 1rem !default;
 
 
 .widget-title {
-  @extend .title;
+  @extend .title !optional;
 }
 

@@ -44,7 +44,7 @@ $wordpress-comments-avatar-size: 64px;
 }
 
 .comment-reply-title {
-  @extend .title;
+  @extend .title !optional;
 }
 
 .form-submit {
