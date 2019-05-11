@@ -4,7 +4,6 @@
     <list default="true" id="52b4ac06-078d-4007-8b53-ab6b2648203d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/entry.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/entry.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +240,8 @@
     <MESSAGE value="firms fix" />
     <MESSAGE value="wordpress updates" />
     <MESSAGE value="snippets update" />
-    <option name="LAST_COMMIT_MESSAGE" value="snippets update" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.editorconfig">
