@@ -1,8 +1,14 @@
-$wordpress-comments-avatar-size: 64px;
+$wordpress-comments-avatar-size: 64px !default;
 
 .comment-list {
   list-style: none;
+
+  .children {
+    list-style: none;
+    padding-left: 2rem;
+  }
 }
+
 
 .comment-body {
 
@@ -12,10 +18,14 @@ $wordpress-comments-avatar-size: 64px;
     top: 0;
     width: $wordpress-comments-avatar-size;
     height: $wordpress-comments-avatar-size;
+    border-radius: 999rem;
   }
 
+
+
   .reply {
-    text-align: right;
+    margin-top: 1rem;
+    margin-left: 66px;
   }
 }
 
@@ -28,6 +38,10 @@ $wordpress-comments-avatar-size: 64px;
   top: 0;
   right: 0;
   font-size: $size-7;
+
+  time {
+    color: $grey-dark;
+  }
 }
 
 .comment-meta,
@@ -37,9 +51,17 @@ $wordpress-comments-avatar-size: 64px;
 
 .comment {
   &:not(:last-child) {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid $border;
+  }
+}
+
+.children {
+ > .comment {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid $border;
   }
 }
 

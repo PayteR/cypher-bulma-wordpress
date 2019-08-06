@@ -1,6 +1,6 @@
 {
   "name": "cypher-bulma-wordpress",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Extended Bulma components, modules, gutenberg for more convenient develoment. Use as you wish with sass @includes!",
   "main": "index.js",
   "repository": {
